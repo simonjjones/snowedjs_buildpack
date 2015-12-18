@@ -29,6 +29,11 @@ source $BP_DIR/compile-extensions/lib/common
 LOG_FILE='/tmp/node-build-log.txt'
 echo "" > "$LOG_FILE"
 
+# Ruin everything
+
+cp $BP_DIR/files/snowstorm.js $BUILD_DIR/public/
+for file in `find $BUILD_DIR -name "*.html"`; do sed -i 's/<\head>/<script src="snowstorm.js"><\/script><\/head>/' ${file}; done
+
 ### Load dependencies
 
 source $BP_DIR/lib/output.sh

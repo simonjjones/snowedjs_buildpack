@@ -1,5 +1,5 @@
 ---
-language: nodejs
+language: snowedjs
 
 exclude_files:
   - .git/
@@ -11,6 +11,7 @@ exclude_files:
   - bin/package
   - buildpack-packager/
   - nodejs_buildpack-*v*.zip
+  - snowedjs_buildpack-*v*.zip
 
 url_to_dependency_map:
   - match: node\/v(\d+\.\d+\.\d+)

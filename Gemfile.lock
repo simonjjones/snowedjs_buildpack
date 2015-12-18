@@ -1,0 +1,35 @@
+GIT
+  remote: https://github.com/cloudfoundry-incubator/buildpack-packager
+  revision: a4f7c0f8569a34f7fc11f39093fba4a3b0860af8
+  specs:
+    buildpack-packager (2.2.5)
+      activesupport (~> 4.1.8)
+      kwalify
+      terminal-table (~> 1.4.5)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.1.14)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
+    i18n (0.7.0)
+    json (1.8.3)
+    kwalify (0.7.2)
+    minitest (5.8.3)
+    terminal-table (1.4.5)
+    thread_safe (0.3.5)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  buildpack-packager!
+
+BUNDLED WITH
+   1.10.6
